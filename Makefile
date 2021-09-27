@@ -1,8 +1,12 @@
+GITHUB=https://github.com/umich-stivenr
+
 default: build businessdb
 
 .PHONY: build, businessdb, clean, start
 
 build:
+	git clone $(GITHUB)/dbserver.git
+	git clone $(GITHUB)/dbui.git
 	git submodule init && git submodule update
 	cd dbserver && npm install
 	cd dbui && npm install
