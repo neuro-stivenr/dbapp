@@ -1,0 +1,6 @@
+[submodule "dbserver"]
+	path = dbserver
+	url = git@github.com:umich-stivenr/dbserver.git
+[submodule "dbui"]
+	path = dbui
+	url = git@github.com:umich-stivenr/dbui.git
